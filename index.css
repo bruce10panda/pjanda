@@ -31,6 +31,13 @@ body {
     }
   }
 
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 6rem; /* Adjust as needed for smaller screens */
+    }
+  }
+  
+
   .button {
     display: inline-block;
     background: #11223c;
