@@ -13,7 +13,8 @@ body {
     background: linear-gradient(to bottom right, #1DE284 0%, #1DBFE2 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
+    font-weight: 900;
     text-align: center;
     font-size: 10rem;
   
