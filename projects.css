@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Added to make cards wrap to the next line */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #11223c;
+    background: linear-gradient(135deg, #11223c 0%, #04070d 35%, #04070d 64%, #11223c 100%);
+}
+
+.card {
+    background-color: #0d1420;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #0000001a;
+    margin: 20px;
+    padding: 20px;
+    max-width: 300px;
+    min-width: 300px;
+    text-align: center;
+    transition: all 0.3s ease;
+    flex: 1; /* Added to make cards take equal width */
+    box-sizing: border-box; /* Added to include padding in the max-width calculation */
+    transition: all 0.3s ease;
+}
+
+.cardtitle {
+        color: white;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+}
+
+.carddesc {
+    color: white;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: scale(1.03); /* Slightly reduce the scale on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

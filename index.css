@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(17, 34, 60);
+    background: linear-gradient(135deg, rgba(17, 34, 60, 1) 0%, rgba(4, 7, 13, 1) 35%, rgba(4, 7, 13, 1) 64%, rgba(17, 34, 60, 1) 100%);
+  }
+  
+  h1 {
+    background: #1DE284;
+    background: linear-gradient(to bottom right, #1DE284 0%, #1DBFE2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 10rem;
+  
+    /* New Animation Styles */
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
