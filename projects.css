@@ -46,6 +46,6 @@ body {
 }
 
 .card:hover {
-    transform: scale(1.03); /* Slightly reduce the scale on hover */
+    transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
