@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Added to make cards wrap to the next line */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #11223c;
+    background: linear-gradient(135deg, #11223c 0%, #04070d 35%, #04070d 64%, #11223c 100%);
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none; /* Remove the background */
+    padding: 10px; /* Adjusted padding for better visibility */
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e415e; /* Adjusted background color */
+    padding: 20px; /* Increased padding for a square shape */
+    border: none;
+    border-radius: 8px; /* Increased border-radius for a softer look */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.social-button:hover {
+    background-color: #164059; /* Adjusted hover color */
+    transform: scale(1.1);
+}
+
+.social-button img {
+    width: 40px; /* Adjusted image size */
+    height: 40px;
+}
