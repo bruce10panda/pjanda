@@ -43,3 +43,18 @@ body {
     width: 40px; /* Adjusted image size */
     height: 40px;
 }
+
+/* Add this CSS for responsiveness on mobile */
+@media only screen and (max-width: 600px) {
+    .social-buttons {
+        flex-direction: row;
+        align-items: center;
+        position: static;
+        transform: none;
+        padding: 10px;
+    }
+
+    .social-button {
+        margin-bottom: 10px;
+    }
+}
