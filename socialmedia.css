@@ -2,12 +2,12 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Added to make cards wrap to the next line */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #11223c;
-    background: linear-gradient(135deg, #11223c 0%, #04070d 35%, #04070d 64%, #11223c 100%);
+   background: rgb(17, 34, 60);
+    background: linear-gradient(135deg, rgba(17, 34, 60, 1) 0%, rgba(4, 7, 13, 1) 35%, rgba(4, 7, 13, 1) 64%, rgba(17, 34, 60, 1) 100%);
 }
 
 .social-buttons {
@@ -17,44 +17,42 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: none; /* Remove the background */
-    padding: 10px; /* Adjusted padding for better visibility */
+    background: none;
+    padding: 10px;
 }
 
 .social-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1e415e; /* Adjusted background color */
-    padding: 20px; /* Increased padding for a square shape */
+    background-color: #1e415e;
+    padding: 20px;
     border: none;
-    border-radius: 8px; /* Increased border-radius for a softer look */
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     margin-bottom: 40px;
 }
 
 .social-button:hover {
-    background-color: #164059; /* Adjusted hover color */
+    background-color: #164059;
     transform: scale(1.1);
 }
 
 .social-button img {
-    width: 40px; /* Adjusted image size */
+    width: 40px;
     height: 40px;
 }
 
-/* Add this CSS for responsiveness on mobile */
-@media only screen and (max-width: 600px) {
-    .social-buttons {
-        flex-direction: row;
-        align-items: center;
-        position: static;
-        transform: none;
-        padding: 10px;
-    }
+/* Mobile responsiveness */
+.social-buttons {
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    transform: none;
+    padding: 10px;
+}
 
-    .social-button {
-        margin-bottom: 10px;
-    }
+.social-button {
+    margin-bottom: 10px;
 }
