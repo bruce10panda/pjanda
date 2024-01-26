@@ -26,8 +26,8 @@ body {
   }
 
   h1 {
-    background: #1DE284;
-    background: linear-gradient(to bottom right, #1DE284 0%, #1DBFE2 100%);
+    background: #F46B45;
+    background: linear-gradient(to bottom right, #F46B45 0%, #EEA849 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Montserrat';
