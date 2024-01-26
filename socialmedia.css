@@ -56,3 +56,28 @@ body {
 .social-button {
     margin-bottom: 10px;
 }
+
+.button {
+    display: inline-block;
+    background: #11223c;
+    border: none;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.2s;
+    display: inline-block;
+  }
+
+  .button:hover {
+    transform: scale(1.1);
+  }
+
+  .buttondiv {
+    display: flex;
+    justify-content: center;
+}
