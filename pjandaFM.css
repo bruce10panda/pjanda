@@ -1,0 +1,92 @@
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(17, 34, 60);
+    background: linear-gradient(135deg, rgba(17, 34, 60, 1) 0%, rgba(4, 7, 13, 1) 35%, rgba(4, 7, 13, 1) 64%, rgba(17, 34, 60, 1) 100%);
+  }
+
+  h4 {
+    background: #1DE284;
+    background: linear-gradient(to bottom right, #ffffff 0%, #e9e9e9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    text-align: center;
+    font-size: 3rem;
+
+    /* New Animation Styles */
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+  }
+
+  h1 {
+    background: #1DE284;
+    background: linear-gradient(to bottom right, #1DE284 0%, #1DBFE2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    text-align: center;
+    font-size: 10rem;
+
+    /* New Animation Styles */
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 6rem;
+      /* Adjust as needed for smaller screens */
+    }
+  }
+
+  @media only screen and (min-width: 601px) and (max-width: 1200px) {
+    h1 {
+      font-size: 8rem;
+      /* Adjust for medium-sized screens */
+    }
+  }
+
+  /* Add more media queries as needed for larger screens */
+
+  .buttonplay,
+  .buttonback {
+    display: block; /* Adjusted to block to stack buttons vertically */
+    background: #11223c;
+    border: none;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s;
+  }
+  
+  .buttonplay:hover,
+  .buttonback:hover {
+    transform: scale(1.1);
+  }
+  
+  .landingpage {
+    text-align: center;
+    margin-top: 2rem; /* Adjusted margin for better spacing */
+  }
+  

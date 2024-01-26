@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pjandaFM</title>
+  <link rel="icon" type="image/png" href="assets/pjandastudiosgb.png">
+  <link rel="stylesheet" href="pjandaFM.css">
+
+  <!-- import font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="landingpage">
+    <!-- landing page-->
+    <h1 id="title">pjandaFM</h1>
+    <h4>rock and pop classics</h4>
+
+    <!-- Button appears below the title -->
+    <a class="buttonplay">play</a>
+    <a class="buttonback" href="projects.html">back</a>
+  </div>
+
+  <script>
+    var audio = new Audio('https://stream-153.zeno.fm/uc8dcwoahaqvv?zs=Z1Kcu0ZRQtKEFFwuoPabqA');
+    var button = document.querySelector('.buttonplay');
+
+    button.addEventListener('click', function () {
+      if (audio.paused) {
+        audio.src = 'https://stream-153.zeno.fm/uc8dcwoahaqvv?zs=Z1Kcu0ZRQtKEFFwuoPabqA';
+        audio.play();
+        button.innerHTML = 'pause';
+      } else {
+        audio.pause();
+        button.innerHTML = 'play';
+      }
+    });
+  </script>
+
+</body>
+</html>
